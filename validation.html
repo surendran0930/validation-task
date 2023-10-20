@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation-task</title>
+    <link rel="stylesheet" href="./validation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@300&family=Poppins:wght@400;500;700&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="header_datas">
+        <header>
+            <h1>surendran</h1>
+            <button onclick="popup()" class="add_new_card">Add New Card</button>
+        </header>
+        <section id="datas" class="card_container">
+            <!-- <div class="main_card">
+                <div>
+                    <img src="./img/Rectangle 1965.png" alt="net-flix">
+                </div>
+
+                <div class="content_cards flex">
+
+                    <div>
+                        <p>UX UI Designer</p>
+                        <p>Great Vibes - Information Technology</p>
+                        <p>Chennai, Tamilnadu, India (In-office)</p>
+                    </div>
+                    <div class="content_sec_divs flex">
+                        <div>
+                            <p>Part-Time (9.00 am - 5.00 pm IST)</p>
+                        </div>
+                        <div>
+                            <p>Experience (1 - 2 years)</p>
+                        </div>
+                        <div>
+                            <p>INR (₹) 30,000 - 60,000 / Month</p>
+                        </div>
+                        <div>
+                            <p>51-200 employees</p>
+                        </div>
+                        
+                        
+                        
+                        
+                    </div>
+                    <div>
+                        <button class="card_btn">Apply Now</button>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div> -->
+
+        </section>
+    </div>
+        <div class="form_popup" id="addForm">
+
+
+            <main class="main_popup_container flex">
+
+
+                <form id="forms" class="forms_main flex">
+                    <div>
+                        <p class="form_head">Create a job</p>
+                    </div>
+                    <div class="lab_input">
+                        <div>
+                            <label for="jobTitle" class="labels">Job title <span>*</span></label>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="ex. UX UI Designer" id="jobTitle" class="input_box">
+                        </div>
+
+
+
+                    </div>
+                    <div class="lab_input">
+                        <div>
+                            <label for="companyName" class="labels">Company name <span>*</span></label>
+                        </div>
+                        <div>
+                            <input type="text" id="companyName" placeholder="ex. Google" class="input_box">
+                        </div>
+
+
+                    </div>
+
+                    <div class="lab_input">
+                        <div>
+                            <label for="industry" class="labels">Industry <span>*</span></label>
+                        </div>
+                        <div>
+                            <input type="text" id="industry" class="input_box" placeholder="ex. Information Technology">
+                        </div>
+
+
+                    </div>
+                    <div class="remote_loc flex">
+                        <div class="lab_input">
+                            <div>
+                                <label for="location" class="labels">Location</label>
+                            </div>
+                            <div>
+                                <input type="text" id="location" class="input_box" placeholder="ex. Chennai">
+                            </div>
+                        </div>
+                        <div class="lab_input">
+                            <div>
+                                <label for="remoteType" class="labels">Remote type</label>
+                            </div>
+                            <div>
+                                <input type="text" id="remoteType" class="input_box" placeholder="ex. In-office">
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="lab_input">
+                        <div>
+                            <label for="experience" class="labels">Experience</label>
+                        </div>
+                        <div class="experience_input flex ">
+
+
+                            <div>
+                                <input type="text" id="minimunm" class="input_box" placeholder="Minimum">
+                            </div>
+                            <div>
+                                <input type="text" id="maximum" class="input_box" placeholder="Maximum">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="lab_input">
+                        <div>
+                            <label for="Salary" class="labels">Salary</label>
+                        </div>
+                        <div class="salary flex">
+
+                            <div>
+                                <input type="text" id="sal_min" class="input_box" placeholder="Minimum">
+
+                            </div>
+                            <div>
+                                <input type="text" id="sal_max" class="input_box" placeholder="Maximum">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="lab_input">
+                        <div>
+                            <label for="totalEmployee" class="labels">Total employee</label>
+                        </div>
+                        <div>
+                            <input type="text" id="totalEmployee" class="input_box" placeholder="ex. 100">
+                        </div>
+
+
+                    </div>
+                    <div class="radio_label">
+                        <div>
+                            <label for="" class="labels">Apply type</label>
+                        </div>
+                        <div class="radio_btn">
+
+
+                            <div class="radio_label_input">
+                                <input type="radio" id="contactChoice1" name="contact"  />
+                                <label for="contactChoice1" class="labels_radio">Quick apply</label>
+                            </div>
+                            <div class="radio_label_input">
+                                <input type="radio" id="contactChoice2" name="contact"  />
+                                <label for="contactChoice2" class="labels_radio">External apply</label>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="flex button">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+
+                </form>
+            </main>
+        </div>
+
+    </main>
+    <script src="./vaildation.js"></script>
+</body>
+
+</html>
