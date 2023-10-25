@@ -16,55 +16,28 @@
 <body>
     <main>
         <div class="header_datas">
-        <header>
-            <h1>surendran</h1>
-            <button onclick="popup()" class="add_new_card">Add New Card</button>
-        </header>
-        <section id="datas" class="card_container">
-            <!-- <div class="main_card">
+            <header class="name_btn" id="name_btnn">
                 <div>
-                    <img src="./img/Rectangle 1965.png" alt="net-flix">
+                    <h1>SURENDRAN.K</h1>
+                </div>
+                <div>
+                    <button onclick="popup()" class="add_new_card">Add New Card</button>
                 </div>
 
-                <div class="content_cards flex">
 
-                    <div>
-                        <p>UX UI Designer</p>
-                        <p>Great Vibes - Information Technology</p>
-                        <p>Chennai, Tamilnadu, India (In-office)</p>
-                    </div>
-                    <div class="content_sec_divs flex">
-                        <div>
-                            <p>Part-Time (9.00 am - 5.00 pm IST)</p>
-                        </div>
-                        <div>
-                            <p>Experience (1 - 2 years)</p>
-                        </div>
-                        <div>
-                            <p>INR (₹) 30,000 - 60,000 / Month</p>
-                        </div>
-                        <div>
-                            <p>51-200 employees</p>
-                        </div>
-                        
-                        
-                        
-                        
-                    </div>
-                    <div>
-                        <button class="card_btn">Apply Now</button>
-                    </div>
+            </header>
+            <div>
 
 
 
 
+                <section id="datas" class="card_container">
 
 
-                </div>
-            </div> -->
 
-        </section>
-    </div>
+                </section>
+            </div>
+        </div>
         <div class="form_popup" id="addForm">
 
 
@@ -81,6 +54,7 @@
                         </div>
                         <div>
                             <input type="text" placeholder="ex. UX UI Designer" id="jobTitle" class="input_box">
+                            <p class="error" id="jobTittleErr"></p>
                         </div>
 
 
@@ -92,6 +66,7 @@
                         </div>
                         <div>
                             <input type="text" id="companyName" placeholder="ex. Google" class="input_box">
+                            <p class="error" id="companyErr"></p>
                         </div>
 
 
@@ -103,6 +78,7 @@
                         </div>
                         <div>
                             <input type="text" id="industry" class="input_box" placeholder="ex. Information Technology">
+                            <p class="error" id="industryErr"></p>
                         </div>
 
 
@@ -113,7 +89,8 @@
                                 <label for="location" class="labels">Location</label>
                             </div>
                             <div>
-                                <input type="text" id="location" class="input_box" placeholder="ex. Chennai">
+                                <input type="text" id="locations" class="input_box" placeholder="ex. Chennai">
+                                <p class="error" id="locationErr"></p>
                             </div>
                         </div>
                         <div class="lab_input">
@@ -122,6 +99,7 @@
                             </div>
                             <div>
                                 <input type="text" id="remoteType" class="input_box" placeholder="ex. In-office">
+                                <p class="error" id="remoteTypeErr"></p>
                             </div>
 
 
@@ -139,9 +117,11 @@
 
                             <div>
                                 <input type="text" id="minimunm" class="input_box" placeholder="Minimum">
+                                <p class="error" id="minimunmErr"></p>
                             </div>
                             <div>
                                 <input type="text" id="maximum" class="input_box" placeholder="Maximum">
+                                <p class="error" id="maximumErr"></p>
                             </div>
                         </div>
 
@@ -155,10 +135,12 @@
 
                             <div>
                                 <input type="text" id="sal_min" class="input_box" placeholder="Minimum">
+                                <p class="error" id="salaryMinErr"> </p>
 
                             </div>
                             <div>
                                 <input type="text" id="sal_max" class="input_box" placeholder="Maximum">
+                                <p class="error" id="salaryMaxErr"></p>
                             </div>
                         </div>
 
@@ -169,6 +151,7 @@
                         </div>
                         <div>
                             <input type="text" id="totalEmployee" class="input_box" placeholder="ex. 100">
+                            <p class="error" id="totalEmployeeErr"></p>
                         </div>
 
 
@@ -176,16 +159,17 @@
                     <div class="radio_label">
                         <div>
                             <label for="" class="labels">Apply type</label>
+                            <p class="error" id="contactChoice1Err"></p>
                         </div>
                         <div class="radio_btn">
 
 
                             <div class="radio_label_input">
-                                <input type="radio" id="contactChoice1" name="contact"  />
+                                <input type="radio" id="contactChoice1" name="contact" />
                                 <label for="contactChoice1" class="labels_radio">Quick apply</label>
                             </div>
                             <div class="radio_label_input">
-                                <input type="radio" id="contactChoice2" name="contact"  />
+                                <input type="radio" id="contactChoice2" name="contact" />
                                 <label for="contactChoice2" class="labels_radio">External apply</label>
                             </div>
                         </div>

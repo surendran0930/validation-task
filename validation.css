@@ -7,13 +7,21 @@
 .flex{
     display: flex;
 }
+.name_btn{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    background-color: #182021;
+    color: #D8D8D8;
+}
 
               /* form css  */
 .form_popup{
     position: absolute;
     top: 0px;
     display: none;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     /* width: 100wh; */
      background: var(--background-f-2-f-5-f-7, #F2F5F7);
@@ -49,7 +57,7 @@ background: var(--elements-color-card-color-ffffff, #FFF);
 }
 .input_box{
     width: 100%;
-    padding: 8px 12px;
+    padding: 4px 12px;
     /* border-radius: 5px; */
     border-radius: 5px;
 border: 1px solid var(--elements-color-card-border-e-6-e-6-e-6, #E6E6E6);
@@ -66,6 +74,7 @@ justify-content: flex-end;
     padding: 8px 16px;
     border-radius: 6px;
     background: #1597E4;
+    border: none;
     
     /* shadow/sm */
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
@@ -92,6 +101,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 28px; /* 140% */
+
 }
 .labels{
     color: var(--font-dark-212121, #212121);
@@ -163,7 +173,7 @@ border: 1px solid #DADEDF;
 background: var(--elements-color-card-color-ffffff, #FFF);
 display: grid;
 grid-template-columns: repeat(2,1fr);
-gap: 5%;
+gap: 15px;
 background: var(--tags-expired-d-8-d-8-d-8, #D8D8D8);
 
 }
@@ -186,6 +196,7 @@ background: var(--tags-expired-d-8-d-8-d-8, #D8D8D8);
 .card_btn{
     border-radius: 6px;
 background: #1597E4;
+border: none;
 
 /* shadow/sm */
 box-shadow: 0px 1px 2px 0px rgba(249, 247, 247, 0.05);
@@ -201,12 +212,13 @@ line-height: 24px; /* 150% */
 .header_datas{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
 }
 
 .add_new_card{
     border-radius: 6px;
     background: #1597E4;
+    border: none;
     
     /* shadow/sm */
     box-shadow: 0px 1px 2px 0px rgba(249, 247, 247, 0.05);
@@ -217,4 +229,11 @@ line-height: 24px; /* 150% */
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
+}
+
+
+.error{
+    color: red;
+    font-family: emoji;
+    /* font-weight: 100; */
 }
