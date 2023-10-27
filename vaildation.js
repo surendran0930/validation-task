@@ -17,7 +17,7 @@ let output = document.getElementById("datas");
 const datas = (data) => {
   data.map((data) => {
     output.innerHTML += `<div class="main_card">
-    <div>
+    <div  class="cards_img">
         <img src="./img/Rectangle 1965.png" alt="net-flix">
     </div>
     
