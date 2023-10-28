@@ -10,6 +10,7 @@
 .name_btn{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     height: 100px;
     background-color: #182021;
