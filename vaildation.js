@@ -17,7 +17,7 @@ let output = document.getElementById("datas");
 const datas = (data) => {
   data.map((data) => {
     output.innerHTML += `<div class="main_card">
-    <div  class="cards_img">
+    <div  class=" ">
         <img src="./img/Rectangle 1965.png" alt="net-flix">
     </div>
     
@@ -30,7 +30,7 @@ const datas = (data) => {
         </div>
         <div class="content_sec_divs flex">
             <div>
-                <p>Part-Time (9.00 am - 5.00 pm IST)</p>
+                <p>${data.remoteType} (9.00 am - 5.00 pm IST)</p>
             </div>
             <div>
                 <p>Experience (${data.minimumExperience} - ${data.maximumExperience} years)</p>
